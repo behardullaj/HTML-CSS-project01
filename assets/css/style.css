@@ -1,0 +1,387 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+
+
+*{
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+    font-family: Raleway, sans-serif;
+}
+
+
+
+.container{
+    width: 1200px;
+    margin: 0 auto;
+}
+
+a{
+    text-decoration: none;
+}
+
+
+
+header a{
+    color: white;
+    text-decoration: none;
+    
+}
+
+header .container{
+    height: 80px;
+    padding: 20px 0px;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 10;
+}
+
+header nav ul{
+    height: 60px;
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+header nav ul li{
+    position: relative;
+}
+
+header nav ul li ul {
+    width: 150px;
+    height: auto;
+    display: none;
+    background-color: #eee;
+    flex-direction: column;
+    padding: 10px;
+
+    position: absolute;
+    top: 30px;
+}
+
+header nav ul li ul a{
+    color: black;
+    font-size: 16px;
+}
+header nav ul li i{
+    font-size: 10px;
+}
+
+header nav ul li a{
+    display: block;
+    height: 40px;
+    line-height: 30px;
+}
+
+header nav ul li:hover ul{
+    display: block;
+}
+
+
+.hero{
+    width: 100%;
+    height: 80vh;
+    background: url(/assets/image/hero-bg.jpg) center center / cover;
+    position: relative;
+    margin-top: -80px;
+    z-index: 9;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main .container{
+    text-align: center;
+    padding: 0px 15px ;
+}
+
+main h1{
+    margin: 0px 0px 10px 0px;
+    font-size: 48px;
+    font-weight: 600;
+    line-height: 56px;
+}
+
+main h2{
+    margin-bottom: 30px;
+    font-size: 24px;
+}
+
+main input{
+    border-radius: 50px;
+    width:250px;
+    height: 40px;
+    font-size: 14px;
+    border: 0px;
+    padding: 0px 15px 2px 20px;
+    margin: 0px 8px;
+}
+main button{
+    font-family: Raleway, sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    display: inline-block;
+    border-radius: 50px;
+    padding: 8px 30px;
+    letter-spacing: 1px;
+    transition: all 0.5s;
+    border: none;
+    color: white;
+    background-color: rgb(253, 104, 14);
+    margin: 10px;
+}
+
+section{
+    padding: 80px 0px;
+}
+
+
+.intro .container{
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    gap: 10px;
+
+}
+
+.intro img{
+    display: block;
+    width: 90%;
+    margin-left: 60px;
+}
+
+.intro .content{
+    margin: 20px 0;
+}
+
+.intro h3{
+    padding-bottom: 20px ;
+    font-weight: 300;
+    font-size: 26px;
+}
+.intro p{
+    font-style: italic;
+    margin-top: 10px;
+}
+
+.intro ul{
+    margin: 20px 0 ;
+}
+.intro ul li{
+    list-style-type: none;
+    padding: 10px 0;
+    line-height: 25px;
+}
+
+.intro ul li i{
+    color: rgb(253, 104, 14);
+}
+
+
+.why-us {
+    background-color: rgb(255, 247, 242);
+    padding: 60px 0;
+
+}
+
+.why-us .reasons{
+    display: grid; 
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+.why-us .card {
+    margin: 10;
+    border-radius: 6px;
+    border: 0px;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 2px 15px;
+    margin-bottom: 30px;
+}
+
+.why-us .card img{
+    width: 100%;
+    border-radius: 6px 6px 0px 0px;
+}
+
+.why-us .card h5 {
+    font-size: 20px;
+    font-weight: 700;
+    text-align: center;
+    padding: 20px;
+}
+.why-us .card h5 a {
+    color: rgb(116, 62, 29);
+}
+
+.why-us .card h5 a:hover{
+    color: #fd680e;
+}
+
+.why-us .card p{
+    padding: 0px 20px 10px 20px;
+}
+
+.section-title h2{
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+.section-title h2{
+    font-size: 32px;
+    font-weight: 300;
+    margin-bottom: 20px;
+    padding-bottom: 15px;
+    position: relative;
+}
+.section-title h2::after{
+    content: "";
+    position: absolute;
+    display: block;
+    width: 80px;
+    height: 1px;
+    background: rgb(253, 104, 14);
+    bottom: 0px;
+    left: calc(50% - 40px);
+}
+
+
+.faq .faq-list{
+    list-style-type: none;
+    padding: 0px;
+    margin-top: 40px;
+}
+
+.faq .faq-list li{
+    color: #fd680e;
+    border-bottom: 1px solid #eee;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 400;
+    position: relative;
+}
+
+.faq .faq-list li i{
+    color: black;
+    font-size: 24px;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.contact{
+    margin: 0 150px;
+}
+
+#contact .contact {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 50px;
+}
+
+.contact .address li{
+    display: grid;
+    grid-template-columns: 60px 1fr;
+    color:  #444444;
+}
+
+.contact .address span{
+    width: 50px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+} 
+
+.contact .address span.icon{
+    color: #fd680e;
+    font-size: 20px;
+}
+
+.contact .address .social-media li {
+    margin: 20px 0 0 15px; 
+    display: inline-block;
+
+}
+
+#contact .social-media li i{
+    width: 40px;
+    height: 40px;
+    background-color: #2f1708;
+    color: #eee;
+    padding: 11px 0px;
+    font-size: 20px;
+    font-weight: 200;
+    text-align: center;
+    border-radius: 50%;
+    line-height: 1;
+    transition: 0.3s;
+}
+
+#contact .social-media li i:hover{
+    background-color: #fd680e;
+}
+
+#contact .contact form{
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    gap: 10px;
+}
+
+#contact .contact form input,
+#contact .contact form textarea{
+    width: 100%;
+    font-size: 14px;
+    line-height: 1.5;
+    font-weight: 400;
+    border: 1px solid #ced4da;
+    padding: .375rem .75rem;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+#contact .contact form button{
+    justify-self: center;
+    width: 150px;
+    height: 40px;
+    background-color: #fd680e;
+    padding: 10px 24px;
+    color: #eee;
+    border: none;
+}
+
+textarea{
+    resize: none;
+}
+
+#contact{
+    background-color: rgb(255, 247, 242);
+}
+
+
+
+footer{
+    color: #eee;
+    background-color: #2f1708;
+    padding: 30px 0px;
+    text-align: center;
+    font-size: 14px;
+}
+
+footer a{
+    color: #fd680e;
+}
+
+footer p{
+    padding: 5px;
+}
+
+
+
+
+
+
